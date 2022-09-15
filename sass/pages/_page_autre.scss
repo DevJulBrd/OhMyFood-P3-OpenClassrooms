@@ -1,0 +1,194 @@
+@import "../utils/keyframes";
+@import "../utils/variables";
+
+.img_back {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 780px) {
+    height: 400px;
+  }
+}
+
+.bloc_choice {
+  @media screen and (min-width: 280px) {
+    background-color: #f6f6f6;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  @media screen and (min-width: 780px) {
+    width: 80%;
+    margin-left: 10%;
+    padding: 30px;
+  }
+}
+
+.title_restorant {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 780px) {
+    justify-content: space-between;
+  }
+}
+
+.like_other {
+  @media screen and (min-width: 280px) {
+    font-size: 25px;
+    width: 9%;
+  }
+}
+
+.heart2_other {
+  @media screen and (min-width: 280px) {
+    opacity: 0;
+    margin-left: -31px;
+    color: #9356dc;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.under_line {
+  @media screen and (min-width: 280px) {
+    width: 15%;
+    text-transform: uppercase;
+    border-bottom: solid 2px $color-third;
+    font-weight: lighter;
+  }
+  @media screen and (min-width: 780px) {
+      width: 3%;
+  }
+}
+
+.carte {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.choice {
+  @media screen and (min-width: 280px) {
+    background: white;
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: #d1d1d1 0px 10px 20px 0px;
+    display: flex;
+    transition: movein 2s ease-out;
+    &:hover {
+      .choice__check_box {
+        width: 30%;
+        background: $color-third;
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(1);
+      }
+      .choice__check {
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(1);
+      }
+      .check_icon {
+        transform: rotate(2turn);
+      }
+    }
+  }
+  @media screen and (min-width: 780px) {
+    width: 85%;
+  }
+}
+
+.choice__check_box {
+  @media screen and (min-width: 280px) {
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 1s ease-in-out;
+  }
+}
+
+.choice__check {
+  @media screen and (min-width: 280px) {
+    display: none;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 1s ease-in-out;
+  }
+}
+
+.check_icon {
+  @media screen and (min-width: 280px) {
+    color: $color-third;
+    transition: transform 1s ease-in-out;
+  }
+}
+
+.choice_description {
+  @media screen and (min-width: 280px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    text-overflow: ellipsis;
+  }
+}
+
+.ingrédients {
+  @media screen and (min-width: 280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.description {
+  @media screen and (min-width: 280px) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 245px;
+  }
+  @media screen and (min-width: 780px) {
+    width: 800px;
+  }
+}
+
+.price {
+  @media screen and (min-width: 280px) {
+    font-weight: bold;
+  }
+}
+
+/* la note enchantée variente */
+
+.carte_only {
+  @media screen and (min-width: 280px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+  }
+}

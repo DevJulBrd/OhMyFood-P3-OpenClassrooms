@@ -1,0 +1,133 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.restorants {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 50px 0 50px 0;
+  }
+  @media screen and (min-width: 780px) {
+    width: 80%;
+    border-radius: 20px;
+  }
+}
+
+.anounce {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 780px) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+  }
+}
+
+.card_oppening {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.lien {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+  }
+  @media screen and (min-width: 780px) {
+    width: 40%;
+  }
+}
+
+.article_restorant {
+  @media screen and (min-width: 280px) {
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: #d1d1d1 0px 10px 20px 0px;
+  }
+}
+
+.img_restaurant {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.new {
+  @media screen and (min-width: 280px) {
+    width: 25%;
+    height: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 225px;
+    background: $color-third;
+  }
+  @media screen and (min-width: 780px) {
+    width: 7%;
+    margin-left: 440px;
+  }
+}
+
+.new_text {
+  @media screen and (min-width: 280px) {
+    color: #058a69;
+    font-size: 20px;
+  }
+}
+
+.article_description {
+  @media screen and (min-width: 280px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80px;
+    padding-left: 15px;
+  }
+}
+
+.like {
+  @media screen and (min-width: 280px) {
+    margin-top: 25px;
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  @media screen and (min-width: 780px) {
+    margin-left: 340px;
+  }
+}
+
+.heart1:hover {
+  @media screen and (min-width: 280px) {
+    display: none;
+  }
+}
+
+.heart2 {
+  opacity: 0;
+  margin-left: -37px;
+  color: #9356dc;
+  &:hover {
+    opacity: 1;
+  }
+}

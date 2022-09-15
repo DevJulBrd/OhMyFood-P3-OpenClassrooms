@@ -1,0 +1,160 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+/* page d'aceuille */
+
+.header {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+  }
+}
+
+.img_logo {
+  @media screen and (min-width: 280px) {
+    width: 55%;
+  }
+}
+
+#logo_principal {
+  @media screen and (min-width: 280px) {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+}
+
+#location_bar {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    box-shadow: inset #d1d1d1 0px 10px 10px 0px;
+  }
+  @media screen and (min-width: 780px) {
+    height: 70px;
+  }
+}
+
+#icon_location {
+  @media screen and (min-width: 280px) {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+}
+
+.city {
+  @media screen and (min-width: 280px) {
+    font-size: 30px;
+  }
+}
+
+#discover_restorant {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    text-align: center;
+  }
+}
+
+.text_light {
+  @media screen and (min-width: 280px) {
+    font-weight: lighter;
+  }
+}
+
+.button_ {
+  @media screen and (min-width: 280px) {
+    @include button;
+  }
+}
+
+.text_button {
+  @media screen and (min-width: 280px) {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+#concept {
+  @media screen and (min-width: 280px) {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.concept_explan {
+  @media screen and (min-width: 280px) {
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    box-shadow: #d1d1d1 0px 4px 8px 0px;
+  }
+  @media screen and (min-width: 780px) {
+    width: 25%;
+  }
+}
+
+.explan {
+  @media screen and (min-width: 280px) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+.number {
+  @media screen and (min-width: 280px) {
+    background-color: $color-first;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -290px;
+    color: white;
+  }
+  @media screen and (min-width: 780px) {
+    margin-left: -535px;
+  }
+}
+
+.icon_explan {
+  @media screen and (min-width: 280px) {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* header page_autre */
+
+#logo {
+  @media screen and (min-width: 280px) {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+  }
+}
+
+.img_logo_other {
+  @media screen and (min-width: 280px) {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

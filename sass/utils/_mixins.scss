@@ -1,0 +1,12 @@
+/* Seul et unique bouton */
+
+@mixin button {
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 35px;
+  width: 290px;
+  height: 70px;
+  border: none;
+  box-shadow: #d1d1d1 0px 6px 8px 0px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
