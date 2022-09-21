@@ -43,6 +43,7 @@
     white-space: nowrap;
     overflow: hidden;
     width: 282px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 780px) {
@@ -442,9 +443,11 @@
 }
 @keyframes movein {
   0% {
-    opacity: 0;
+    margin-top: 130px;
+    opacity: 0.2;
   }
   100% {
+    margin-top: 0;
     opacity: 1;
   }
 }
@@ -536,6 +539,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    animation: movein 3s forwards;
   }
 }
 
@@ -546,7 +550,6 @@
     border-radius: 20px;
     box-shadow: #d1d1d1 0px 10px 20px 0px;
     display: flex;
-    transition: movein 2s ease-out;
   }
   .choice:hover .choice__check_box {
     width: 30%;
@@ -569,6 +572,11 @@
   }
   .choice:hover .check_icon {
     transform: rotate(2turn);
+  }
+  .choice:hover .description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 780px) {
@@ -616,20 +624,6 @@
   .ingrédients {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 280px) {
-  .description {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 245px;
-  }
-}
-@media screen and (min-width: 780px) {
-  .description {
-    width: 800px;
   }
 }
 
@@ -685,9 +679,11 @@
 }
 @keyframes movein {
   0% {
-    opacity: 0;
+    margin-top: 130px;
+    opacity: 0.2;
   }
   100% {
+    margin-top: 0;
     opacity: 1;
   }
 }
@@ -755,9 +751,11 @@
 }
 @keyframes movein {
   0% {
-    opacity: 0;
+    margin-top: 130px;
+    opacity: 0.2;
   }
   100% {
+    margin-top: 0;
     opacity: 1;
   }
 }
