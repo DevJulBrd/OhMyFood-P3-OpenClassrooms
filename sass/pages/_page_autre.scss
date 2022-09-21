@@ -80,6 +80,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: movein 2s ease-out;
   }
 }
 
@@ -90,7 +91,6 @@
     border-radius: 20px;
     box-shadow: #d1d1d1 0px 10px 20px 0px;
     display: flex;
-    transition: movein 2s ease-out;
     &:hover {
       .choice__check_box {
         width: 30%;
