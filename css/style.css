@@ -35,20 +35,21 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 780px) {
+  section {
+    width: 33%;
+  }
+}
 
 @media screen and (min-width: 280px) {
   h2 {
     margin: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 282px;
     font-size: 18px;
   }
 }
 @media screen and (min-width: 780px) {
   h2 {
-    width: 800px;
+    width: 360px;
   }
 }
 
@@ -236,6 +237,20 @@
   }
 }
 
+@media screen and (min-width: 280px) {
+  .go_back {
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+  }
+}
+@media screen and (min-width: 780px) {
+  .go_back {
+    font-size: 30px;
+  }
+}
+
 /* Seul et unique bouton */ /* Colors */
 @media screen and (min-width: 280px) {
   .restorants {
@@ -417,6 +432,14 @@
     transform: scaleX(100%);
   }
 }
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -446,9 +469,44 @@
     margin-top: 130px;
     opacity: 0.2;
   }
+  90% {
+    opacity: 0.8;
+  }
   100% {
     margin-top: 0;
     opacity: 1;
+  }
+}
+@keyframes width {
+  0% {
+    width: 300px;
+  }
+  100% {
+    width: 220px;
+  }
+}
+@keyframes widthtitle {
+  0% {
+    width: 336px;
+  }
+  100% {
+    width: 259px;
+  }
+}
+@keyframes widthdesk {
+  0% {
+    width: 370px;
+  }
+  100% {
+    width: 320px;
+  }
+}
+@keyframes whidhtitledesk {
+  0% {
+    width: 360px;
+  }
+  100% {
+    width: 300px;
   }
 }
 /* Colors */
@@ -482,6 +540,18 @@
     width: 80%;
     margin-left: 10%;
     padding: 30px;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .all_menu {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 780px) {
+  .all_menu {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -571,17 +641,34 @@
     transform: scaleX(1);
   }
   .choice:hover .check_icon {
-    transform: rotate(2turn);
+    animation: turn 1s;
   }
   .choice:hover .description {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    width: 220px;
+    animation: width 1s;
+  }
+  .choice:hover h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 259px;
+    animation: widthtitle 1s;
   }
 }
 @media screen and (min-width: 780px) {
   .choice {
     width: 85%;
+  }
+  .choice:hover .description {
+    width: 70%;
+    animation: widthdesk 1s;
+  }
+  .choice:hover h2 {
+    width: 300px;
+    animation: widthtitledesk 1s;
   }
 }
 
@@ -605,7 +692,17 @@
 @media screen and (min-width: 280px) {
   .check_icon {
     color: #99e2d0;
-    transition: transform 1s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .description {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .description {
+    width: 100%;
   }
 }
 
@@ -617,6 +714,8 @@
     width: 100%;
     padding: 10px;
     text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform 1s ease-in-out;
   }
 }
 
@@ -641,6 +740,7 @@
     align-items: center;
     justify-content: space-around;
     height: 300px;
+    animation: movein 3s forwards;
   }
 }
 
@@ -651,6 +751,14 @@
   }
   100% {
     transform: scaleX(100%);
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(2turn);
   }
 }
 @keyframes loader {
@@ -682,9 +790,44 @@
     margin-top: 130px;
     opacity: 0.2;
   }
+  90% {
+    opacity: 0.8;
+  }
   100% {
     margin-top: 0;
     opacity: 1;
+  }
+}
+@keyframes width {
+  0% {
+    width: 300px;
+  }
+  100% {
+    width: 220px;
+  }
+}
+@keyframes widthtitle {
+  0% {
+    width: 336px;
+  }
+  100% {
+    width: 259px;
+  }
+}
+@keyframes widthdesk {
+  0% {
+    width: 370px;
+  }
+  100% {
+    width: 320px;
+  }
+}
+@keyframes whidhtitledesk {
+  0% {
+    width: 360px;
+  }
+  100% {
+    width: 300px;
   }
 }
 /* loader page d'acceuil */
@@ -725,6 +868,14 @@
     transform: scaleX(100%);
   }
 }
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -754,9 +905,44 @@
     margin-top: 130px;
     opacity: 0.2;
   }
+  90% {
+    opacity: 0.8;
+  }
   100% {
     margin-top: 0;
     opacity: 1;
+  }
+}
+@keyframes width {
+  0% {
+    width: 300px;
+  }
+  100% {
+    width: 220px;
+  }
+}
+@keyframes widthtitle {
+  0% {
+    width: 336px;
+  }
+  100% {
+    width: 259px;
+  }
+}
+@keyframes widthdesk {
+  0% {
+    width: 370px;
+  }
+  100% {
+    width: 320px;
+  }
+}
+@keyframes whidhtitledesk {
+  0% {
+    width: 360px;
+  }
+  100% {
+    width: 300px;
   }
 }
 

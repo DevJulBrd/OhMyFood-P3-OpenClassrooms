@@ -30,6 +30,16 @@
   }
 }
 
+.all_menu {
+  @media screen and (min-width: 280px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 780px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .title_restorant {
   @media screen and (min-width: 280px) {
     width: 100%;
@@ -112,17 +122,36 @@
         transform: scaleX(1);
       }
       .check_icon {
-        transform: rotate(2turn);
+        animation: turn 1s;
       }
       .description {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        width: 220px;
+        animation: width 1s;
+      }
+      h2 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 259px;
+        animation: widthtitle 1s;
       }
     }
   }
   @media screen and (min-width: 780px) {
     width: 85%;
+    &:hover {
+      .description {
+        width: 70%;
+        animation: widthdesk 1s;
+      }
+      h2{
+        width: 300px;
+        animation: widthtitledesk 1s;
+      }
+    }
   }
 }
 
@@ -146,7 +175,16 @@
 .check_icon {
   @media screen and (min-width: 280px) {
     color: $color-third;
-    transition: transform 1s ease-in-out;
+    
+  }
+}
+
+.description {
+  @media screen and (min-width: 280px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 780px) {
+    width: 100%;
   }
 }
 
@@ -158,6 +196,8 @@
     width: 100%;
     padding: 10px;
     text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform 1s ease-in-out;
   }
 }
 
@@ -183,5 +223,6 @@
     align-items: center;
     justify-content: space-around;
     height: 300px;
+    animation: movein 3s forwards;
   }
 }

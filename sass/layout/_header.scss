@@ -158,3 +158,15 @@
     margin-right: auto;
   }
 }
+
+.go_back {
+  @media screen and (min-width: 280px) {
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  @media screen and (min-width: 780px) {
+    font-size: 30px;
+  }
+}
