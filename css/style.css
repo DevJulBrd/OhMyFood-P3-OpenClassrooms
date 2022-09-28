@@ -429,7 +429,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(100%);
+    transform: scaleX(1);
   }
 }
 @keyframes turn {
@@ -750,7 +750,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(100%);
+    transform: scaleX(1);
   }
 }
 @keyframes turn {
@@ -865,7 +865,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(100%);
+    transform: scaleX(1);
   }
 }
 @keyframes turn {
