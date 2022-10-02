@@ -63,7 +63,11 @@
   @media screen and (min-width: 280px) {
     opacity: 0;
     margin-left: -31px;
-    color: #9356dc;
+    background: linear-gradient(to right, $color-second, $color-first);
+    -moz-background-clip: text;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    color: transparent;
     &:hover {
       opacity: 1;
     }

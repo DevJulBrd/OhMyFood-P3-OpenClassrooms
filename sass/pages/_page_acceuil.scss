@@ -131,8 +131,11 @@
 .heart2 {
   opacity: 0;
   margin-left: -37px;
-  color: #9356dc;
-
+  background: linear-gradient(to right, $color-second, $color-first);
+  -moz-background-clip: text;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
   &:hover {
     opacity: 1;
   }

@@ -92,3 +92,14 @@
     width: 300px;
   }
 }
+
+@keyframes boutton {
+  0% {
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: #d1d1d1 0px 6px 8px 0px;
+  }
+  100%{
+    background: linear-gradient(#fda2e3, #ae76f2);
+    box-shadow: #adacac 0 10px 12px 0;
+  }
+}

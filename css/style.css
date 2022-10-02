@@ -145,6 +145,11 @@
     box-shadow: #d1d1d1 0px 6px 8px 0px;
     margin-top: 35px;
     margin-bottom: 35px;
+    animation: button 3s;
+  }
+  .button_:hover {
+    background: linear-gradient(#fda2e3, #ae76f2);
+    box-shadow: #adacac 0 10px 12px 0;
   }
 }
 
@@ -387,7 +392,11 @@
 .heart2 {
   opacity: 0;
   margin-left: -37px;
-  color: #9356dc;
+  background: linear-gradient(to right, #ff79da, #9356dc);
+  -moz-background-clip: text;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .heart2:hover {
   opacity: 1;
@@ -509,6 +518,16 @@
     width: 300px;
   }
 }
+@keyframes boutton {
+  0% {
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: #d1d1d1 0px 6px 8px 0px;
+  }
+  100% {
+    background: linear-gradient(#fda2e3, #ae76f2);
+    box-shadow: #adacac 0 10px 12px 0;
+  }
+}
 /* Colors */
 @media screen and (min-width: 280px) {
   .img_back {
@@ -580,7 +599,11 @@
   .heart2_other {
     opacity: 0;
     margin-left: -31px;
-    color: #9356dc;
+    background: linear-gradient(to right, #ff79da, #9356dc);
+    -moz-background-clip: text;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    color: transparent;
   }
   .heart2_other:hover {
     opacity: 1;
@@ -830,6 +853,16 @@
     width: 300px;
   }
 }
+@keyframes boutton {
+  0% {
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: #d1d1d1 0px 6px 8px 0px;
+  }
+  100% {
+    background: linear-gradient(#fda2e3, #ae76f2);
+    box-shadow: #adacac 0 10px 12px 0;
+  }
+}
 /* loader page d'acceuil */
 @media screen and (min-width: 280px) {
   .loader {
@@ -943,6 +976,16 @@
   }
   100% {
     width: 300px;
+  }
+}
+@keyframes boutton {
+  0% {
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: #d1d1d1 0px 6px 8px 0px;
+  }
+  100% {
+    background: linear-gradient(#fda2e3, #ae76f2);
+    box-shadow: #adacac 0 10px 12px 0;
   }
 }
 
