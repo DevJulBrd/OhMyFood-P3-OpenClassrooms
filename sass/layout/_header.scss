@@ -101,9 +101,10 @@
     border-radius: 20px;
     background-color: #f6f6f6;
     box-shadow: #d1d1d1 0px 4px 8px 0px;
+    position: relative;
   }
   @media screen and (min-width: 780px) {
-    width: 25%;
+    width: 35%;
   }
 }
 
@@ -119,17 +120,14 @@
   @media screen and (min-width: 280px) {
     background-color: $color-first;
     border-radius: 50px;
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-left: -290px;
     color: white;
-  }
-  @media screen and (min-width: 780px) {
-    margin-left: -535px;
+    left: -7%;
   }
 }
 

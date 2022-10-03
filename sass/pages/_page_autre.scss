@@ -25,7 +25,9 @@
   }
   @media screen and (min-width: 780px) {
     width: 80%;
-    margin-left: 10%;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px;
   }
 }
@@ -55,14 +57,14 @@
 .like_other {
   @media screen and (min-width: 280px) {
     font-size: 25px;
-    width: 9%;
+    display: flex;
   }
 }
 
 .heart2_other {
   @media screen and (min-width: 280px) {
     opacity: 0;
-    margin-left: -31px;
+    margin-left: -25px;
     background: linear-gradient(to right, $color-second, $color-first);
     -moz-background-clip: text;
     background-clip: content-box;
@@ -128,34 +130,31 @@
       .check_icon {
         animation: turn 1s;
       }
+      .choice_description {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 70%;
+        animation: width 1s;
+      }
       .description {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width: 220px;
+        width: 85%;
         animation: width 1s;
       }
       h2 {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width: 259px;
+        width: 89%;
         animation: widthtitle 1s;
       }
     }
   }
   @media screen and (min-width: 780px) {
-    width: 85%;
-    &:hover {
-      .description {
-        width: 70%;
-        animation: widthdesk 1s;
-      }
-      h2{
-        width: 300px;
-        animation: widthtitledesk 1s;
-      }
-    }
+    width: 100%;
   }
 }
 
@@ -185,7 +184,10 @@
 
 .description {
   @media screen and (min-width: 280px) {
-    width: 300px;
+    width: 89%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   @media screen and (min-width: 780px) {
     width: 100%;
@@ -198,7 +200,7 @@
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
     text-overflow: ellipsis;
     transform-origin: left;
     transition: transform 1s ease-in-out;
@@ -209,6 +211,7 @@
   @media screen and (min-width: 280px) {
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
   }
 }
 

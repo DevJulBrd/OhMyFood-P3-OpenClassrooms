@@ -45,11 +45,10 @@
   h2 {
     margin: 0;
     font-size: 18px;
-  }
-}
-@media screen and (min-width: 780px) {
-  h2 {
-    width: 360px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 10px;
   }
 }
 
@@ -135,11 +134,11 @@
   }
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 280px) and (min-width: 280px) {
   .button_ {
     background: linear-gradient(#ff79da, #9356dc);
     border-radius: 35px;
-    width: 290px;
+    width: 90%;
     height: 70px;
     border: none;
     box-shadow: #d1d1d1 0px 6px 8px 0px;
@@ -150,6 +149,11 @@
   .button_:hover {
     background: linear-gradient(#fda2e3, #ae76f2);
     box-shadow: #adacac 0 10px 12px 0;
+  }
+}
+@media screen and (min-width: 280px) and (min-width: 780px) {
+  .button_ {
+    width: 30%;
   }
 }
 
@@ -181,11 +185,12 @@
     border-radius: 20px;
     background-color: #f6f6f6;
     box-shadow: #d1d1d1 0px 4px 8px 0px;
+    position: relative;
   }
 }
 @media screen and (min-width: 780px) {
   .concept_explan {
-    width: 25%;
+    width: 35%;
   }
 }
 
@@ -201,19 +206,14 @@
   .number {
     background-color: #9356dc;
     border-radius: 50px;
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-left: -290px;
     color: white;
-  }
-}
-@media screen and (min-width: 780px) {
-  .number {
-    margin-left: -535px;
+    left: -7%;
   }
 }
 
@@ -316,9 +316,15 @@
   .article_restorant {
     width: 90%;
     height: 300px;
+    position: relative;
     background-color: white;
     border-radius: 20px;
     box-shadow: #d1d1d1 0px 10px 20px 0px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .article_restorant {
+    width: 100%;
   }
 }
 
@@ -333,22 +339,16 @@
 
 @media screen and (min-width: 280px) {
   .new {
-    width: 25%;
-    height: 5%;
+    width: auto;
+    height: 10%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-top: 15px;
-    margin-left: 225px;
+    top: 5%;
+    right: 5%;
     background: #99e2d0;
-  }
-}
-@media screen and (min-width: 780px) {
-  .new {
-    width: 7%;
-    margin-left: 440px;
   }
 }
 
@@ -372,14 +372,11 @@
 
 @media screen and (min-width: 280px) {
   .like {
-    margin-top: 25px;
-    margin-left: 100px;
     font-size: 30px;
-  }
-}
-@media screen and (min-width: 780px) {
-  .like {
-    margin-left: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 }
 
@@ -391,7 +388,7 @@
 
 .heart2 {
   opacity: 0;
-  margin-left: -37px;
+  margin-left: -30px;
   background: linear-gradient(to right, #ff79da, #9356dc);
   -moz-background-clip: text;
   background-clip: content-box;
@@ -488,34 +485,18 @@
 }
 @keyframes width {
   0% {
-    width: 300px;
+    width: 100%;
   }
   100% {
-    width: 220px;
+    width: 85%;
   }
 }
 @keyframes widthtitle {
   0% {
-    width: 336px;
+    width: 100%;
   }
   100% {
-    width: 259px;
-  }
-}
-@keyframes widthdesk {
-  0% {
-    width: 370px;
-  }
-  100% {
-    width: 320px;
-  }
-}
-@keyframes whidhtitledesk {
-  0% {
-    width: 360px;
-  }
-  100% {
-    width: 300px;
+    width: 89%;
   }
 }
 @keyframes boutton {
@@ -557,7 +538,9 @@
 @media screen and (min-width: 780px) {
   .bloc_choice {
     width: 80%;
-    margin-left: 10%;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px;
   }
 }
@@ -591,14 +574,14 @@
 @media screen and (min-width: 280px) {
   .like_other {
     font-size: 25px;
-    width: 9%;
+    display: flex;
   }
 }
 
 @media screen and (min-width: 280px) {
   .heart2_other {
     opacity: 0;
-    margin-left: -31px;
+    margin-left: -25px;
     background: linear-gradient(to right, #ff79da, #9356dc);
     -moz-background-clip: text;
     background-clip: content-box;
@@ -666,32 +649,31 @@
   .choice:hover .check_icon {
     animation: turn 1s;
   }
+  .choice:hover .choice_description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70%;
+    animation: width 1s;
+  }
   .choice:hover .description {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 220px;
+    width: 85%;
     animation: width 1s;
   }
   .choice:hover h2 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 259px;
+    width: 89%;
     animation: widthtitle 1s;
   }
 }
 @media screen and (min-width: 780px) {
   .choice {
-    width: 85%;
-  }
-  .choice:hover .description {
-    width: 70%;
-    animation: widthdesk 1s;
-  }
-  .choice:hover h2 {
-    width: 300px;
-    animation: widthtitledesk 1s;
+    width: 100%;
   }
 }
 
@@ -720,7 +702,10 @@
 
 @media screen and (min-width: 280px) {
   .description {
-    width: 300px;
+    width: 89%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 780px) {
@@ -735,7 +720,7 @@
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
     text-overflow: ellipsis;
     transform-origin: left;
     transition: transform 1s ease-in-out;
@@ -746,6 +731,7 @@
   .ingrédients {
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
   }
 }
 
@@ -823,34 +809,18 @@
 }
 @keyframes width {
   0% {
-    width: 300px;
+    width: 100%;
   }
   100% {
-    width: 220px;
+    width: 85%;
   }
 }
 @keyframes widthtitle {
   0% {
-    width: 336px;
+    width: 100%;
   }
   100% {
-    width: 259px;
-  }
-}
-@keyframes widthdesk {
-  0% {
-    width: 370px;
-  }
-  100% {
-    width: 320px;
-  }
-}
-@keyframes whidhtitledesk {
-  0% {
-    width: 360px;
-  }
-  100% {
-    width: 300px;
+    width: 89%;
   }
 }
 @keyframes boutton {
@@ -948,34 +918,18 @@
 }
 @keyframes width {
   0% {
-    width: 300px;
+    width: 100%;
   }
   100% {
-    width: 220px;
+    width: 85%;
   }
 }
 @keyframes widthtitle {
   0% {
-    width: 336px;
+    width: 100%;
   }
   100% {
-    width: 259px;
-  }
-}
-@keyframes widthdesk {
-  0% {
-    width: 370px;
-  }
-  100% {
-    width: 320px;
-  }
-}
-@keyframes whidhtitledesk {
-  0% {
-    width: 360px;
-  }
-  100% {
-    width: 300px;
+    width: 89%;
   }
 }
 @keyframes boutton {

@@ -59,37 +59,19 @@
 
 @keyframes width {
   0% {
-    width: 300px;
+    width: 100%;
   }
   100% {
-    width: 220px;
+    width: 85%;
   }
 }
 
 @keyframes widthtitle {
   0% {
-    width: 336px;
+    width: 100%;
   }
   100% {
-    width: 259px;
-  }
-}
-
-@keyframes widthdesk {
-  0% {
-    width: 370px;
-  }
-  100% {
-    width: 320px;
-  }
-}
-
-@keyframes whidhtitledesk {
-  0% {
-    width: 360px;
-  }
-  100% {
-    width: 300px;
+    width: 89%;
   }
 }
 
