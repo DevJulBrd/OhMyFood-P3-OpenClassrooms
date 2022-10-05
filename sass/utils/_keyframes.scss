@@ -75,6 +75,15 @@
   }
 }
 
+@keyframes widthdescription {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
 @keyframes boutton {
   0% {
     background: linear-gradient(#ff79da, #9356dc);

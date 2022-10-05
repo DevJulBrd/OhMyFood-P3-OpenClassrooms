@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&family=Roboto:wght@100;300;700&display=swap");
 @font-face {
   font-family: "Shrikhand";
-  src: url(font/shrikhand/Shrikhand-Regular.ttf) format("truetype");
+  src: url("font/shrikhand/Shrikhand-Regular.ttf") format("truetype");
 }
 @media screen and (min-width: 280px) {
   body {
@@ -77,6 +77,11 @@
 @media screen and (min-width: 280px) {
   .img_logo {
     width: 55%;
+  }
+}
+@media screen and (min-width: 780px) {
+  .img_logo {
+    width: 35%;
   }
 }
 
@@ -242,6 +247,11 @@
     margin-right: auto;
   }
 }
+@media screen and (min-width: 780px) {
+  .img_logo_other {
+    width: 35%;
+  }
+}
 
 @media screen and (min-width: 280px) {
   .go_back {
@@ -400,6 +410,7 @@
   opacity: 1;
 }
 
+/* Seul et unique footer */
 @media screen and (min-width: 280px) {
   .footer {
     background-color: #353535;
@@ -412,6 +423,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 280px) and (min-width: 780px) {
+  .footer ul {
+    flex-direction: row;
   }
 }
 
@@ -498,6 +514,14 @@
   }
   100% {
     width: 89%;
+  }
+}
+@keyframes widthdescription {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 70%;
   }
 }
 @keyframes boutton {
@@ -600,11 +624,14 @@
     text-transform: uppercase;
     border-bottom: solid 2px #99e2d0;
     font-weight: lighter;
+    margin-left: 3%;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 780px) {
   .under_line {
     width: 3%;
+    margin-top: 25px;
   }
 }
 
@@ -655,7 +682,11 @@
     white-space: nowrap;
     overflow: hidden;
     width: 70%;
-    animation: width 1s;
+    animation: widthdescription 1s;
+  }
+  .choice:hover .ingrédients {
+    width: 89%;
+    animation: widthtitle 1s;
   }
   .choice:hover .description {
     text-overflow: ellipsis;
@@ -824,6 +855,14 @@
     width: 89%;
   }
 }
+@keyframes widthdescription {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 70%;
+  }
+}
 @keyframes boutton {
   0% {
     background: linear-gradient(#ff79da, #9356dc);
@@ -931,6 +970,14 @@
   }
   100% {
     width: 89%;
+  }
+}
+@keyframes widthdescription {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 70%;
   }
 }
 @keyframes boutton {

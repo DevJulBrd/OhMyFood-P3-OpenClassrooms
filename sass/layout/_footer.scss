@@ -1,3 +1,5 @@
+/* Seul et unique footer */ 
+
 .footer {
   @media screen and (min-width: 280px) {
     background-color: #353535;
@@ -9,8 +11,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      @media screen and (min-width: 780px) {
+        flex-direction: row;
+      }
     }
   }
+
 }
 
 .help {

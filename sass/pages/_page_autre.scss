@@ -82,9 +82,12 @@
     text-transform: uppercase;
     border-bottom: solid 2px $color-third;
     font-weight: lighter;
+    margin-left: 3%;
+    margin-top: 50px;
   }
   @media screen and (min-width: 780px) {
     width: 3%;
+    margin-top: 25px;
   }
 }
 
@@ -135,7 +138,11 @@
         white-space: nowrap;
         overflow: hidden;
         width: 70%;
-        animation: width 1s;
+        animation: widthdescription 1s;
+      }
+      .ingrédients {
+        width: 89%;
+        animation: widthtitle 1s;
       }
       .description {
         text-overflow: ellipsis;
