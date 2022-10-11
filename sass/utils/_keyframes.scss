@@ -94,3 +94,12 @@
     box-shadow: #adacac 0 10px 12px 0;
   }
 }
+
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}

@@ -119,6 +119,7 @@
         justify-content: center;
         align-items: center;
         transform: scaleX(1);
+        animation: check 1s;
       }
       .choice__check {
         background: white;
@@ -169,7 +170,7 @@
   @media screen and (min-width: 280px) {
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 }
 
@@ -184,8 +185,7 @@
 
 .check_icon {
   @media screen and (min-width: 280px) {
-    color: $color-third;
-    
+    color: $color-third; 
   }
 }
 
@@ -209,8 +209,6 @@
     width: 100%;
     padding: 10px 0;
     text-overflow: ellipsis;
-    transform-origin: left;
-    transition: transform 1s ease-in-out;
   }
 }
 

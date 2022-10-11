@@ -534,6 +534,14 @@
     box-shadow: #adacac 0 10px 12px 0;
   }
 }
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
 /* Colors */
 @media screen and (min-width: 280px) {
   .img_back {
@@ -663,6 +671,7 @@
     justify-content: center;
     align-items: center;
     transform: scaleX(1);
+    animation: check 1s;
   }
   .choice:hover .choice__check {
     background: white;
@@ -713,7 +722,7 @@
   .choice__check_box {
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 }
 
@@ -754,8 +763,6 @@
     width: 100%;
     padding: 10px 0;
     text-overflow: ellipsis;
-    transform-origin: left;
-    transition: transform 1s ease-in-out;
   }
 }
 
@@ -873,6 +880,14 @@
     box-shadow: #adacac 0 10px 12px 0;
   }
 }
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
 /* loader page d'acceuil */
 @media screen and (min-width: 280px) {
   .loader {
@@ -988,6 +1003,14 @@
   100% {
     background: linear-gradient(#fda2e3, #ae76f2);
     box-shadow: #adacac 0 10px 12px 0;
+  }
+}
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
   }
 }
 
