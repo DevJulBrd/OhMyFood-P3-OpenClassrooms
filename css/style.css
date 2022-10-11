@@ -149,11 +149,10 @@
     box-shadow: #d1d1d1 0px 6px 8px 0px;
     margin-top: 35px;
     margin-bottom: 35px;
-    animation: button 3s;
   }
   .button_:hover {
-    background: linear-gradient(#fda2e3, #ae76f2);
-    box-shadow: #adacac 0 10px 12px 0;
+    filter: brightness(1.4);
+    animation: button 3s;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 780px) {
@@ -524,14 +523,12 @@
     width: 70%;
   }
 }
-@keyframes boutton {
+@keyframes button {
   0% {
-    background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: #d1d1d1 0px 6px 8px 0px;
+    filter: brightness(1);
   }
   100% {
-    background: linear-gradient(#fda2e3, #ae76f2);
-    box-shadow: #adacac 0 10px 12px 0;
+    filter: brightness(1.4);
   }
 }
 @keyframes check {
@@ -870,14 +867,12 @@
     width: 70%;
   }
 }
-@keyframes boutton {
+@keyframes button {
   0% {
-    background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: #d1d1d1 0px 6px 8px 0px;
+    filter: brightness(1);
   }
   100% {
-    background: linear-gradient(#fda2e3, #ae76f2);
-    box-shadow: #adacac 0 10px 12px 0;
+    filter: brightness(1.4);
   }
 }
 @keyframes check {
@@ -995,14 +990,12 @@
     width: 70%;
   }
 }
-@keyframes boutton {
+@keyframes button {
   0% {
-    background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: #d1d1d1 0px 6px 8px 0px;
+    filter: brightness(1);
   }
   100% {
-    background: linear-gradient(#fda2e3, #ae76f2);
-    box-shadow: #adacac 0 10px 12px 0;
+    filter: brightness(1.4);
   }
 }
 @keyframes check {
