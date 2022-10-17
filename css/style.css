@@ -108,6 +108,7 @@
 @media screen and (min-width: 780px) {
   #location_bar {
     height: 70px;
+    padding: 0;
   }
 }
 
