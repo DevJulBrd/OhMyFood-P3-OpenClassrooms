@@ -34,6 +34,7 @@
     justify-content: center;
     background-color: #eaeaea;
     box-shadow: inset #d1d1d1 0px 10px 10px 0px;
+    padding: 10px 0;
   }
   @media screen and (min-width: 780px) {
     height: 70px;
@@ -42,14 +43,14 @@
 
 #icon_location {
   @media screen and (min-width: 280px) {
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 10px;
   }
 }
 
 .city {
   @media screen and (min-width: 280px) {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -64,9 +65,17 @@
   }
 }
 
+.discover {
+  @media screen and (min-width: 280px) {
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+  }
+}
+
 .text_light {
   @media screen and (min-width: 280px) {
     font-weight: lighter;
+    font-size: 15px;
   }
 }
 
@@ -78,7 +87,7 @@
 
 .text_button {
   @media screen and (min-width: 280px) {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
   }
 }
@@ -105,7 +114,12 @@
     background-color: #f6f6f6;
     box-shadow: #d1d1d1 0px 4px 8px 0px;
     position: relative;
-  }
+    &:hover {
+      .icon_explan {
+          color: $color-first;
+        }
+      }
+    }
   @media screen and (min-width: 780px) {
     width: 35%;
   }
@@ -140,6 +154,7 @@
     font-size: 25px;
     display: flex;
     align-items: center;
+    transition: all 500ms ease-in-out;
   }
 }
 

@@ -69,6 +69,7 @@
     -moz-background-clip: text;
     background-clip: content-box;
     -webkit-background-clip: text;
+    transition: all 400ms ease-in-out;
     color: transparent;
     &:hover {
       opacity: 1;

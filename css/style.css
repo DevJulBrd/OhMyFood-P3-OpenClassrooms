@@ -102,6 +102,7 @@
     justify-content: center;
     background-color: #eaeaea;
     box-shadow: inset #d1d1d1 0px 10px 10px 0px;
+    padding: 10px 0;
   }
 }
 @media screen and (min-width: 780px) {
@@ -112,14 +113,14 @@
 
 @media screen and (min-width: 280px) {
   #icon_location {
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 10px;
   }
 }
 
 @media screen and (min-width: 280px) {
   .city {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -135,8 +136,16 @@
 }
 
 @media screen and (min-width: 280px) {
+  .discover {
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+  }
+}
+
+@media screen and (min-width: 280px) {
   .text_light {
     font-weight: lighter;
+    font-size: 15px;
   }
 }
 
@@ -144,8 +153,8 @@
   .button_ {
     background: linear-gradient(#ff79da, #9356dc);
     border-radius: 35px;
-    width: 90%;
-    height: 70px;
+    width: 180px;
+    height: 50px;
     border: none;
     box-shadow: #d1d1d1 0px 6px 8px 0px;
     margin-top: 35px;
@@ -156,15 +165,10 @@
     animation: button 3s;
   }
 }
-@media screen and (min-width: 280px) and (min-width: 780px) {
-  .button_ {
-    width: 30%;
-  }
-}
 
 @media screen and (min-width: 280px) {
   .text_button {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
   }
 }
@@ -191,6 +195,9 @@
     background-color: #f6f6f6;
     box-shadow: #d1d1d1 0px 4px 8px 0px;
     position: relative;
+  }
+  .concept_explan:hover .icon_explan {
+    color: #9356dc;
   }
 }
 @media screen and (min-width: 780px) {
@@ -228,6 +235,7 @@
     font-size: 25px;
     display: flex;
     align-items: center;
+    transition: all 500ms ease-in-out;
   }
 }
 
@@ -360,6 +368,7 @@
     top: 5%;
     right: 5%;
     background: #99e2d0;
+    padding: 0 10px;
   }
 }
 
@@ -377,7 +386,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     height: 80px;
-    padding-left: 15px;
+    padding: 0 10px;
+    align-content: space-between;
   }
 }
 
@@ -405,6 +415,7 @@
   background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
+  transition: all 400ms ease-in-out;
 }
 .heart2:hover {
   opacity: 1;
@@ -617,6 +628,7 @@
     -moz-background-clip: text;
     background-clip: content-box;
     -webkit-background-clip: text;
+    transition: all 400ms ease-in-out;
     color: transparent;
   }
   .heart2_other:hover {
